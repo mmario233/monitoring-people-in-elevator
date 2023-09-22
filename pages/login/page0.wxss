@@ -1,0 +1,14 @@
+/* pages/login/page0.wxss */
+.biaoti {
+    margin-top: 30%;
+    width: 1100rpx;
+    height: 800rpx;
+}
+
+.center {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

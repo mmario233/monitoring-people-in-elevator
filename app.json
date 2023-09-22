@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/login/page0",
+        "pages/start/start",
+        "pages/demoss/temperature/temperature",
+        "pages/demoss/humidity/humidity",
+        "pages/demoss/maps/maps"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fc8e34",
+        "navigationBarTitleText": "智能旅行箱数据",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#fc8e34"
+    },
+    "debug": false,
+    "sitemapLocation": "sitemap.json",
+    "appid":"wxfa930f73dde1858d",
+    "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+        }
+    }
+}

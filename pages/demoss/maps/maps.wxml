@@ -1,0 +1,30 @@
+<map style="width: 100%; height: 300px;" longitude="{{ilongitude}}" latitude="{{ilatitude}}" height="200rpx" show-location markers="{{marker}}" scale="13"></map>
+<view class='task_cate'>
+    <view class='cate_item' wx:key="cate" bindtap="comeback">
+        <view class='cate_icon'>
+            <image src='../../../images/fanhui.png'></image>
+        </view>
+        <view class='cate_text'>寻回</view>
+    </view>
+</view>
+
+<view class="table">
+    <view wx:if="{{cityList}}" class="th0">城市足迹</view>
+  <view class="tr bg-w">
+    <view class="th">国家</view>
+    <view class="th">城市</view>
+    <view class="th ">时间</view>
+  </view>
+  <block wx:for="{{cityList}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.country}}</view>
+      <view class="td">{{item.city}}</view>
+      <view class="td">{{item.time}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.country}}</view>
+      <view class="td">{{item.city}}</view>
+      <view class="td">{{item.time}}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/login/page0.wxml-->
+<view class="center">
+    <image mode="scaleToFill" class="biaoti" src="../../images/biaoti.png"></image>
+</view>

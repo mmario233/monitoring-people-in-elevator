@@ -1,0 +1,70 @@
+
+<view class='task_cate'>
+    <view class='cate_item' wx:key="cate" bindtap='clickTemp' data-index="{{index}}">
+        <view class='cate_icon'>
+            <image src='../../images/wendu.png'></image>
+        </view>
+        <view class='cate_text'>温度: {{temp}}℃</view>
+    </view>
+
+    <view class='cate_item' wx:key="cate" bindtap='clickHumi' data-index="{{index}}">
+        <view class='cate_icon'>
+            <image src='../../images/shidu.png'></image>
+        </view>
+        <view class='cate_text'>湿度:{{humidity}}%</view>
+    </view>
+
+    <view></view>
+    <view class='cate_item' wx:key="cate" data-index="{{index}}">
+        <view class='cate_icon' wx:if="{{battery>70}}">
+            <image src='../../images/dianchi1.png'></image>
+        </view>
+        <view class='cate_icon' wx:elif="{{battery>20}}">
+            <image src='../../images/dianchi2.png'></image>
+        </view>
+        <view class='cate_icon' wx:elif="{{battery>0}}">
+            <image src='../../images/dianchi3.png'></image>
+        </view>
+        <view class='cate_text'>电量:{{battery}}%</view>
+    </view>
+
+    <view class='cate_item' wx:key="cate" data-index="{{index}}">
+        <view class='cate_icon'>
+            <image src='../../images/zhongliang.png'></image>
+        </view>
+        <view class='cate_text'>重量:{{weight}}kg</view>
+    </view>
+    <view class='cate_item' wx:key="cate" data-index="{{index}}" bindtap='clickMap'>
+        <view class='cate_icon'>
+            <image src='../../images/weizhi.png'></image>
+        </view>
+        <view class='cate_text'>实时位置</view>
+    </view>
+    <view class='cate_item' wx:key="cate" data-index="{{index}}" bindtap='clickMap' bindtap="onTrack">
+        <view class='cate_icon'>
+            <image src='../../images/genzong.png'></image>
+        </view>
+        <view class='cate_text'>跟踪</view>
+    </view>
+</view>
+
+<view class="margin"><view>蓝牙已链接</view></view>
+
+<view class="forward">
+<image bindtap='front' bindlongpress="setfront" class="forward" src="../../images/keyboard-arrow-up_119010.png"></image>
+</view>
+<view class="turn">
+    <view class="leftward">
+    <image bindtap='left' bindlongpress="setleft" class="leftward" src="../../images/keyboard-arrow-left_119012.png"></image>
+    </view>
+    <view class="rightward">
+    <image bindtap='right' bindlongpress="setright" class="rightward" src="../../images/keyboard-arrow-right_119011.png"></image>
+    </view>
+</view>
+
+
+<view class="backward">
+<image bindtap='back' bindlongpress="setback" class="backward" src="../../images/keyboard-arrow-down_119013.png"></image>
+</view>
+
+

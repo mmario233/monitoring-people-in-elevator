@@ -1,0 +1,88 @@
+.start {
+  width: 280rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  margin: 40rpx auto;
+  border: 2rpx solid #fc8e34;
+  color: #E7624F;
+  border-radius: 20rpx;
+}
+
+
+
+
+
+.task_cate {
+  width: 660rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.task_cate .cate_item {
+  width: 320rpx;
+  height: 150rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+  margin-top: 30rpx;
+}
+.task_cate .cate_item .cate_icon {
+  height: 100rpx;
+}
+.task_cate .cate_item .cate_icon image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.task_cate .cate_item .cate_text {
+  height: 80rpx;
+  line-height: 70rpx;
+  font-size: 40rpx;
+  color: #d4440b;
+}
+.task_cate .cate_item .cate_text_active {
+  color: #E7624F;
+}
+
+
+.margin{
+ margin-left: 39%;
+ margin-right: auto;
+ margin-bottom: 310rpx;
+ width: auto;
+ position: relative;
+ font: outline;
+ color: rgb(12, 112, 126);
+}
+.forward{
+  width: 130rpx;
+  height: 80rpx;
+  margin: auto;
+  margin-bottom: 40rpx;
+}
+
+.leftward{
+  width: 80rpx;
+  height: 130rpx;
+  margin-left: 95rpx;
+  float: left;
+}
+
+.rightward{
+  width: 80rpx;
+  height: 130rpx;
+  float: right;
+  margin-right: 95rpx;
+  margin-bottom: 40rpx;
+}
+
+.rightward.rightwardword{
+  height: 20rpx;
+  font-size: small;
+}
+
+.backward{
+  width: 130rpx;
+  height: 80rpx;
+  margin: auto;
+  clear: both;
+}
